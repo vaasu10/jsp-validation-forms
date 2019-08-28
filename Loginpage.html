@@ -1,0 +1,33 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Untitled Document</title>
+</head>
+<head>
+
+   
+</head>
+<script>  
+function validateform(){  
+var name=document.myform.name.value;  
+var password=document.myform.password.value;  
+  
+if (name =="user@gmail.com"  && password == "123456"){  
+  alert("Email and pwd valid");  
+  return false;  
+}  
+ alert("Enter  correct details");  
+  
+  
+}  
+</script>  
+<body> 
+<table align="center" width=40% width="100%" cellspacing="2" cellpadding="2" border="5">
+<form name="myform" method="post" action="registraion.html" onsubmit="return validateform()" > 
+ 
+<tr><td>Email:</td> <td><input type="text" name="name" ></td>
+<tr><td>Password:</td> <td><input type="password" name="password" ></td> 
+<tr><td><td valign="middle"><input type="submit" value="register" formaction="registraion.html"><input type="submit" value="login" formaction="Loginpage.html" ></td></td></tr>
+</form>  
+</html>
